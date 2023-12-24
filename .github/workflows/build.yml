@@ -6,9 +6,9 @@ jobs:
 build:
 runs-on: ubuntu-latest
 steps:
--uses: actions/checkout@v2
+- uses: actions/checkout@v2
 used to cache dependencies with a timeout
--name: Get Date
+- name: Get Date
 id: get-date
 run: |
 echo "::set-output name=date::$(/bin/date -u "+%Y%m%d")"
